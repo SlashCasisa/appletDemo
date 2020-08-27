@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "查看虚拟机",
+  "usingComponents": {
+    "listItem": "./components/listItem",
+    "van-loading": "../../miniprogram_npm/@vant/weapp/loading/index"
+  }
+}

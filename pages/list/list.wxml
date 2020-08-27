@@ -1,0 +1,21 @@
+<view wx:if="loading">
+  <van-loading size="24px">加载中...</van-loading>
+</view>
+<view wx:else>
+  <view wx:if="{{list.length>0}}">
+    <view wx:for="{{list}}" data-item="item" wx:for-index="index">
+      <listItem item="{{item}}" />
+    </view>
+    <view class='loadmore' hidden='{{isShowLoadmore}}'>
+      <van-loading size="24px">加载中...</van-loading>
+    </view>
+    <view class="loadmore loadmore_line" hidden='{{!isShowNoDatasTips}}'>
+      <van-divider contentPosition="center" customStyle="color: #1989fa; border-color: #1989fa; font-size: 18px;">
+        我也是有底线的
+      </van-divider>
+    </view>
+  </view>
+  <view wx:else>
+    暂无数据
+  </view>
+</view>

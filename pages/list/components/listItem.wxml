@@ -1,0 +1,3 @@
+<view class="item-container">
+ <view> {{item}} </view>
+</view>
